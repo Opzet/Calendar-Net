@@ -21,9 +21,9 @@ namespace CalendarNetDemo
         {
             calendar1.Date = DateTime.Now;
 
-            //calendar1.ApplyTheme(new CalendarNet.Themes.DefaultTheme());
+            calendar1.ApplyTheme(new CalendarNet.Themes.DefaultTheme());
             //calendar1.ApplyTheme(new CalendarNet.Themes.BlueTheme());
-            calendar1.ApplyTheme(new CalendarNet.Themes.GreenTheme());
+           // calendar1.ApplyTheme(new CalendarNet.Themes.GreenTheme());
             //calendar1.ApplyTheme(new CalendarNet.Themes.DarkTheme());
 
             var ev = new MyEvent
@@ -50,7 +50,7 @@ namespace CalendarNetDemo
 
         private void calendar1_EventClicked(object sender, CalendarNet.EventClickedEventArgs e)
         {
-            //MessageBox.Show("Event clicked : " + e.CalendarEvent.EventName);
+            MessageBox.Show("Event clicked : " + e.CalendarEvent.EventName);
         }
 
         private void calendar1_DayDoubleClicked(object sender, CalendarNet.DayClickedEventArgs e)
